@@ -1,0 +1,84 @@
+// @import "component";
+
+
+html {
+  background-color: white;
+}
+
+
+
+.page {
+  height: 100vh;
+  min-height: 600px;
+
+}
+
+@import "_home", "_aboutme", "_contacts", "_project";
+
+
+
+body {
+  font-family: Josefin Sans;
+  color: white;
+  // margin-top: 58px;
+  padding: 0px;
+}
+
+
+h1 {
+  font-size: 120px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+
+
+
+/*blockquote {
+  font: 1.4em/1em 'Gloria Hallelujah', cursive;
+}
+
+blockquote:before { content: '"'; }
+blockquote:after { content: '"'; }*/
+
+#headshot {
+  margin: 0 auto;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
+}
+
+.navbar {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255,255,255,.0);
+  border-radius: 0%;
+  border: 0;
+  color: white;
+  a {
+    color: white !important;
+  }
+  img {
+    -webkit-filter: invert(100%);
+  }
+}
+
+.socialMedia {
+  width: 26px;
+
+}
+
+footer {
+   background-color: gray;
+   font-size: 15px;
+   text-align: center;
+}
+
+
+
+
+
+

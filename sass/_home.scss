@@ -1,0 +1,67 @@
+#header, {
+  height: 100vh;
+  width: 100vw;
+    // background-color: #86d6ce;
+    
+    .row{
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+#sidePanel {
+  background-color: #344a5f;
+  height: 100%;
+  // width: 30%;
+}
+
+#rightSide {
+  // background-image: url("cliff.jpg");
+  background-color: white;
+  height: 100%;
+  padding: 0;
+  // width: 858.666667px;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+
+#picPanel {
+  background-image: url("cliff_Fotor.jpg");
+  height: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#bottom {
+  background-color: #8dcbd0;
+  height: 30%;  
+//   width: 0;
+// height: 0;
+// border-style: solid;
+// border-width: 800px 0 800px 800px;
+// border-color: transparent transparent #8dcbd0 transparent;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: table;
+    span {
+      display: table-cell; 
+      vertical-align: middle;
+      // width: 100vw;
+      span {
+      background: rgba(0,0,0, .3);
+
+      }
+    }
+}
+
+.centerbuttons {
+    text-align: center;
+  }
