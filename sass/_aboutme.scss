@@ -78,8 +78,30 @@
   margin-left: 200px;
   width: 80%;
   padding: 50px;
-
-
 }
 
+.mybio > span > div{
+  position: relative;
+  display: inline-block;
+}
+
+.mybio > span > div:before,
+.mybio > span > div:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: white;
+}
+
+.mybio > span > div:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.mybio > span > div:after {
+  left: 100%;
+  margin-left: 15px;
+}
 

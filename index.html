@@ -6,12 +6,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
   <link rel="stylesheet" href="style.css">
 
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="container-fluid">
@@ -23,71 +26,64 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
           <ul class="nav navbar-nav">
             <li>
               <a href="https://twitter.com/code_with_me" target="_blank">
                 <img class="socialMedia" src="Twitter.png" alt="Twitter">
-              </a></li>
-              <li>
-                <a href="#" target="_blank">
-                  <img class="socialMedia" src="Blog.png" alt="blog">
-                </a></li>
-                <li>
-                  <a href="https://www.linkedin.com/in/ashleyysmith" target="_blank">
-                    <img class="socialMedia" src="LinkedIn-48.png" alt="LinkedIn"></a></li>
-                    <li>
-                      <a href="https://github.com/ashley2" target="_blank">
-                        <img class="socialMedia" src="GitHub-64.png" alt="GitHub">
-                      </a>
-                    </li>
-
-
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/#header">Home</a></li>
-                    <li><a href="/#aboutMe">About Me</a></li>
-                    <li><a href="/#projects">Projects</a></li>
-                    <li><a href="/#contact">Contact Me</a></li>
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img class="socialMedia" src="Blog.png" alt="blog">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ashleyysmith" target="_blank">
+                <img class="socialMedia" src="LinkedIn-48.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ashley2" target="_blank">
+                <img class="socialMedia" src="GitHub-64.png" alt="GitHub">
+              </a>
+            </li>
           </ul>
-        </li> -->
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
-<section id="header" class="page">
-
-
-  <div align="center" class="overlay">
-    <span>
-      <span>
-        <h1>Ashley Marie Smith</h1>
-        <h3>Web Developer</h3>
-      </span>
-    </span>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 " id="sidePanel"></div>
-    <div class="col-xs-8" id="rightSide">
-      <div id="picPanel"></div>
-      <div id="bottom" class="triangle-down-left"></div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#tech">Technologies</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </div>
-  </div>
+  </nav>
 
-</section>
+  <section id="header" class="page">
+    <div align="center" class="overlay">
+      <span>
+        <span>
+          <h1>Ashley Marie Smith</h1>
+          <h3>Web Developer</h3>
+        </span>
+      </span>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 " id="sidePanel"></div>
+      <div class="col-xs-8" id="rightSide">
+        <div id="picPanel"></div>
+        <div id="bottom" class="triangle-down-left"></div>
+      </div>
+    </div>
+
+  </section>
 
     <!-- <h4>
       The current time is...
@@ -108,15 +104,23 @@
       <div class"row" id="middle">
         <div class="leftPanel triangleContainer"></div><div class="triangles">
         <div class="triangleOne">
-
         </div>
+
         <div class="triangleTwo">
-
         </div>
-      </div><div class="rightPanel triangleContainer">
-    </div>
+
+
+      </div><div class="rightPanel triangleContainer"></div>
 
   </div>      
+</section>
+
+<section id="tech" class="page">
+  <div class="technologies">
+    <span>Technologies</span>
+
+  </div>
+  
 </section>
 
 <section id="projects" class="page">
@@ -144,11 +148,13 @@
 
 
 
-<section id="contact">
-  <div>Contact Me!</div>
-  <div id="contactInfo">
-    <!--put info -->
+<section id="contact" class="page">
+<div id="contactHead" align="center">
+  <span>Contact Me!</span>
   </div>
+  <!-- <div id="contactInfo"> -->
+    <!--put info
+  </div> -->
   <div class="centerbuttons">
     <button id="modal-show">Send me a message!</button>
     <div id="modal-container">

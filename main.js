@@ -53,37 +53,41 @@ function init() {
     //******ADD WHEN THE X IS CLIcKED TO change back the note. use jquery
 
 //setting the clock
-  setInterval(function(){
-    var currentTime = new Date();
-    var hours = currentTime.getHours();
-    var minutes = currentTime.getMinutes();
-    var seconds = currentTime.getSeconds();
+  // setInterval(function(){
+  //   var currentTime = new Date();
+  //   var hours = currentTime.getHours();
+  //   var minutes = currentTime.getMinutes();
+  //   var seconds = currentTime.getSeconds();
 
-    if (hours < 12) {
-      hours = hours - 12;
-    }
+  //   if (hours < 12) {
+  //     hours = hours - 12;
+  //   }
 
-    if (minutes < 10) {
-      minutes = "0" + String(minutes);
-    } 
+  //   if (minutes < 10) {
+  //     minutes = "0" + String(minutes);
+  //   } 
 
-    if (seconds < 10) {
-    seconds = "0" + String(seconds);
-  }
+  //   if (seconds < 10) {
+  //   seconds = "0" + String(seconds);
+  // }
 
-    if (hours <= 11) {
-      var timePeriod = " AM"
-    } else {
-      var timePeriod = " PM"
-    }
+  //   if (hours <= 11) {
+  //     var timePeriod = " AM"
+  //   } else {
+  //     var timePeriod = " PM"
+  //   }
 
-    var clockTime = hours + ":" + minutes + ':' + seconds + timePeriod;
+  //   var clockTime = hours + ":" + minutes + ':' + seconds + timePeriod;
 
-    var time = $("#clock");
+  //   var time = $("#clock");
 
 
-    time.text(clockTime);
-  }, 1000);
+  //   time.text(clockTime);
+  // }, 1000);
+
 }
 
-//SLDIER
+
+
+
+

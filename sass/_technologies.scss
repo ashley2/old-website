@@ -1,0 +1,36 @@
+#tech {
+background-color: white;
+}
+
+.technologies {
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
+  width: 100%; 
+  color: #344a5f;
+}
+
+.technologies > span {
+  position: relative;
+  display: inline-block;
+}
+
+.technologies > span:before,
+.technologies > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #344a5f;
+}
+
+.technologies > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.technologies > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
