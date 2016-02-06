@@ -173,7 +173,8 @@ html {
   left: 0px;
   position: fixed;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  color: #344a61; }
 
 #modal-box {
   background-color: white;
@@ -217,6 +218,9 @@ html {
   position: relative;
   top: -18px;
   width: 30px; }
+
+#modal-hide:focus {
+  outline: none; }
 
 #projects {
   background-color: #344a5f;
@@ -305,7 +309,7 @@ html {
   margin-left: 15px; }
 
 body {
-  font-family: Josefin Sans;
+  font-family: 'Raleway', sans-serif;
   color: white;
   padding: 0px;
   position: relative; }

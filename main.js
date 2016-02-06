@@ -5,15 +5,15 @@ $(document).ready(init);
 
 function init() {
 
- 
+
 
 //modal controls:
   var modalContainer = $('#modal-container'); //modal container in doc
-    
+
     var hideModal = function() {  //function to hide the modal
       modalContainer.hide();
     };
-     
+
     var showModal = function() { //function to show the modal
       modalContainer.show();
     };
@@ -25,30 +25,39 @@ function init() {
      closeModalButton.on('click', hideModal); //event of clicking to close modal on button
 
 //change note to a thank you
-    var submitEmail = function(evt){
-      evt.preventDefault();
+var submitEmail = function(evt){
+  evt.preventDefault();
 
 
      var thankYouNote = $('#email-header'); //get the form field to replace text
-    
-    var thankYouNoteForm = $('#email-signup');
-    thankYouNoteForm.hide();
+
+     var thankYouNoteForm = $('#email-signup');
+     thankYouNoteForm.hide();
 
      thankYouNote.text("Thanks!")
 
-      setTimeout(hideModal, 2000);
-    };
+     setTimeout(hideModal, 2000);
+   };
 
-    var emailForm = $('#email-signup');
-    emailForm.on('submit', submitEmail)
+   var emailForm = $('#email-signup');
+   emailForm.on('submit', submitEmail)
 
-    $(document).on('keyup', function(evt){
-      evt = evt || window.event;
+   $(document).on('keyup', function(evt){
+    evt = evt || window.event;
 
-      if (evt.keyCode === 27) {
-        hideModal();
-      }
-    });
+    if (evt.keyCode === 27) {
+      hideModal();
+    }
+  });
+   //nav scroll
+   $('.navLinks').click(function(evt){
+    evt.preventDefault();
+    var location = $(this).attr('href');
+    $('body').stop().animate({
+      scrollTop:$(location).offset().top
+    }, 1500, "easeOutBack");
+
+  })
 
     //******ADD WHEN THE X IS CLIcKED TO change back the note. use jquery
 

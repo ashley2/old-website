@@ -47,6 +47,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  color: #344a61;
 }
 
 #modal-box {
@@ -97,10 +98,8 @@
   width: 30px;
 }
 
-
-
-
-
-
+#modal-hide:focus {
+  outline: none;
+}
 
 
