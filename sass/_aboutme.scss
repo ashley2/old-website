@@ -1,5 +1,7 @@
 #aboutMe {
-  height: 760px;
+  height: 1080px;
+  text-align: center;
+
 }
 
 #middle {
@@ -28,27 +30,19 @@
   background-color: #cccccc;
 }
 
-.triangleOne {
+.triangle {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: 181px 0 200px 181px;
+  border-width: 160px 0 200px 160px;
   border-color: transparent transparent transparent #cccccc;
 
-}
-
-.triangleTwo {
-  height: 0;
-  width: 0;
-  border-style: solid;
-  border-width: 181px 0 200px 181px;
-  border-color: transparent transparent transparent #cccccc;
 }
 
 .mybio {
   position: absolute;
   z-index: 1;
-  height: 100%;
+  height: 1080px;
   width: 100%;
   background-color: rgba(0,0,0,0);
   text-align: center;
@@ -60,16 +54,19 @@
     text-align: center;
     font-size: 30px;
     color: white;
-  padding-right: 50px;
-  padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
-  div {
-    font-size: 80px;
-    color: white;
-    text-align: center;
+}
 
-    // position: absolute;
-  }
+
+.title {
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .box {
@@ -80,13 +77,13 @@
   padding: 50px;
 }
 
-.mybio > span > div{
+.title > div {
   position: relative;
   display: inline-block;
 }
 
-.mybio > span > div:before,
-.mybio > span > div:after {
+.title > div:before,
+.title > div:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -95,13 +92,15 @@
   background: white;
 }
 
-.mybio > span > div:before {
+.title > div:before {
   right: 100%;
   margin-right: 15px;
 }
 
-.mybio > span > div:after {
+.title > div:after {
   left: 100%;
   margin-left: 15px;
 }
+
+
 

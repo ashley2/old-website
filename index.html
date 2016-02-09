@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
   <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
   <link rel="stylesheet" href="style.css">
 
@@ -33,22 +35,22 @@
           <ul class="nav navbar-nav">
             <li>
               <a href="https://twitter.com/code_with_me" target="_blank">
-                <img class="socialMedia" src="Twitter.png" alt="Twitter">
+                <img class="socialMedia" src="./images/Twitter.png" alt="Twitter">
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                <img class="socialMedia" src="Blog.png" alt="blog">
+                <img class="socialMedia" src="./images/Blog.png" alt="blog">
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/ashleyysmith" target="_blank">
-                <img class="socialMedia" src="LinkedIn-48.png" alt="LinkedIn">
+                <img class="socialMedia" src="./images/LinkedIn-48.png" alt="LinkedIn">
               </a>
             </li>
             <li>
               <a href="https://github.com/ashley2" target="_blank">
-                <img class="socialMedia" src="GitHub-64.png" alt="GitHub">
+                <img class="socialMedia" src="./images/GitHub-64.png" alt="GitHub">
               </a>
             </li>
           </ul>
@@ -92,64 +94,147 @@
     <!--    <blockquote id="greeting">This is where the JavaScript greeting goes...</blockquote> -->
 
     <section id="aboutMe" class="page">
+      <div class="title">
+        <div>About me</div>
+      </div>
       <div class="mybio">
         <span>
-          <div>About me</div>
-          <span class="box">
-            With many interests you might find me using my creativity to paint, draw or wood burn my latest designs.  You may find me in 'down dog' practicing yoga or working on my health.    The majority of my time though is spent on my passion for programming.  I am one of the lucky ones because my career and passion are one in the same.
+          <span class="box animation" data-animation="fadeInUp">
+            With many interests you might find me using my creativity to paint, draw or wood burn my latest designs.  You may find me in 'down dog' practicing yoga or working on my health.    The majority of my time though is spent on my passion for programming.  
           </span>
         </span> 
       </div>
       <div class"row" id="middle">
         <div class="leftPanel triangleContainer"></div><div class="triangles">
-        <div class="triangleOne">
+        <div class="triangle">
         </div>
 
-        <div class="triangleTwo">
+        <div class="triangle">
+        </div>
+
+        <div class="triangle">
         </div>
 
 
       </div><div class="rightPanel triangleContainer"></div>
 
-  </div>      
-</section>
+    </div>      
+  </section>
 
-<section id="tech" class="page">
-  <div class="technologies">
-    <span>Technologies</span>
+  <section id="tech" class="page">
+    <div class="technologies">
+      <span>Technologies</span>
 
-  </div>
+    </div>
+
+  </section>
+
+  <section id="projects" class="page">
+
+   <!--  <div class="portfolio" align="center">
+ </div> -->
+ <!-- <div class="container-grid animation"data-animation="bounceInLeft"> -->
+ <span class="projectCells">
+  <span>Portfolio</span>
   
-</section>
+  <div class="row row-centered animation" data-animation="bounceInLeft">
 
-<section id="projects" class="page">
+    <div class="col-sm-3 col-xs-6 col-centered" id="projOne">
+      <ul class="demo-2 effect">
+        <li>
+          <h2 class="zero">Calculator</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/calculator2/" target="_blank">
+            <img class="top" src='./images/calc.jpg' alt="calculator"/>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="portfolio">
-    <span>Portfolio</span>
-  </div>
+    <div class="col-sm-3 col-xs-6 col-centered projTwo">
+      <ul class="demo-2 effect">
+        <li>
+          <h2 class="zero">Fire Slider</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/fireSlider/" target="_blank">
+            <img class="top" src='./images/fire.jpg' alt="fire"/>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="container-grid">
-    <span class="projectCells">
-      <div class="row row-centered">
-        <div class="col-sm-3 col-xs-6 projOne"><img src="" alt="" class="img-responsive"></div>
-        <div class="col-sm-3 col-xs-6 projTwo"><img src="" alt="" class="img-responsive"></div>
-        <div class="col-sm-3 col-xs-6 projThree"><img src="" alt="" class="img-responsive"></div>
-      </div>
-      <div class="row">    
-        <div class="col-sm-3 col-xs-6 projFour"><img src="" alt="" class="img-responsive"></div>
-        <div class="col-sm-3 col-xs-6 projFive"><img src="" alt="" class="img-responsive"></div>
-        <div class="col-sm-3 col-xs-6 projSix"><img src="" alt="" class="img-responsive"></div>
-      </div>
-    </span>
-  </div>
+    <div class="col-sm-3 col-xs-6 col-centered projThree">
+      <ul class="demo-2 effect">
+        <li>
+          <h2 class="zero">Fire Slider</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/fireSlider/" target="_blank">
+            <img class="top" src='./images/fire.jpg' alt="fire"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-3 col-xs-6 col-centered">
+      <ul class="demo-2 effect">
+        <li>
+          <h2 class="zero">Fire Slider</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/fireSlider/" target="_blank">
+            <img class="top" src='./images/fire.jpg' alt="fire"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 col-xs-6 col-centered">
+      <ul class="demo-2 effect">
+
+        <li>
+          <h2 class="zero">Fire Slider</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/fireSlider/" target="_blank">
+            <img class="top" src='./images/fire.jpg' alt="fire"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 col-xs-6 col-centered">
+      <ul class="demo-2 effect">
+
+        <li>
+          <h2 class="zero">Fire Slider</h2>
+          <p class="zero">Technology: JavaScript & jQuery</p>
+        </li>
+        <li>
+          <a href="http://ashley2.github.io/fireSlider/" target="_blank">
+            <img class="top" src='./images/fire.jpg' alt="fire"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+<!-- </div>
+--><!-- <div class="row row-centered animation" data-animation="bounceInLeft">     -->
+</div>
+</span>
+<!-- </div> -->
 
 </section>
 
 
 
 <section id="contact" class="page">
-<div id="contactHead" align="center">
-  <span>Contact Me!</span>
+  <div id="contactHead" align="center">
+    <span>Contact Me!</span>
   </div>
   <!-- <div id="contactInfo"> -->
     <!--put info
