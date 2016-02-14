@@ -1,5 +1,6 @@
+
 #tech {
-background-color: white;
+  background-color: white;
 }
 
 .technologies {
@@ -8,7 +9,10 @@ background-color: white;
   position: absolute;
   width: 100%; 
   color: #344a5f;
-  margin-top: 100px;
+  margin-top: 50px;
+  span {
+    margin-bottom: 10px;
+  }
 }
 
 .technologies > span {
@@ -34,4 +38,43 @@ background-color: white;
 .technologies > span:after {
   left: 100%;
   margin-left: 15px;
+}
+
+img {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+}
+
+#techbox {
+  display: inline-block;
+  // height: 90%;
+  width: 100vw;
+}
+
+.tech-images{
+  transition: all .5s ease;
+}
+.tech-images:hover {
+  transform: scale(1.5);
+}
+
+#html, #css, #sass{
+  width: 100px;
+}
+
+#javascript {
+  width: 250px;
+}
+
+#jquery {
+  width: 300px;
+}
+
+#gulp {
+  width: 90px;
+}
+
+#github {
+  width: 150px;
 }

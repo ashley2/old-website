@@ -97,8 +97,8 @@ html {
     text-align: center;
     font-size: 30px;
     color: white;
-    padding-right: 50px;
-    padding-left: 50px; }
+    padding-right: 200px;
+    padding-left: 200px; }
 
 .title {
   font-size: 80px;
@@ -113,7 +113,9 @@ html {
   margin-right: 200px;
   margin-left: 200px;
   width: 80%;
-  padding: 50px; }
+  padding: 50px;
+  padding-right: 200px !important;
+  padding-left: 200px !important; }
 
 .title > div {
   position: relative;
@@ -234,12 +236,13 @@ html {
   position: absolute;
   width: 100%;
   display: block;
-  margin-top: 100px;
-  padding: 0; }
+  margin-top: 100px; }
+  .projectCells span {
+    margin-bottom: 100px; }
 
 .col-centered {
   display: inline-block;
-  margin-bottom: 0;
+  margin: 0px -8px 0px -8px;
   float: none;
   text-align: left; }
 
@@ -311,6 +314,7 @@ html {
   position: absolute;
   left: 0;
   min-height: 220px;
+  max-height: 340px;
   width: 100%;
   bottom: 0;
   cursor: pointer;
@@ -321,7 +325,7 @@ html {
   transition: bottom .3s ease-in-out; }
 
 .effect img.top:hover {
-  bottom: -75%;
+  bottom: calc(-100% + 100px);
   padding-top: 100px; }
 
 h2.zero, p.zero {
@@ -337,7 +341,9 @@ h2.zero, p.zero {
   position: absolute;
   width: 100%;
   color: #344a5f;
-  margin-top: 100px; }
+  margin-top: 50px; }
+  .technologies span {
+    margin-bottom: 10px; }
 
 .technologies > span {
   position: relative;
@@ -359,6 +365,36 @@ h2.zero, p.zero {
 .technologies > span:after {
   left: 100%;
   margin-left: 15px; }
+
+img {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px; }
+
+#techbox {
+  display: inline-block;
+  width: 100vw; }
+
+.tech-images {
+  transition: all .5s ease; }
+
+.tech-images:hover {
+  transform: scale(1.5); }
+
+#html, #css, #sass {
+  width: 100px; }
+
+#javascript {
+  width: 250px; }
+
+#jquery {
+  width: 300px; }
+
+#gulp {
+  width: 90px; }
+
+#github {
+  width: 150px; }
 
 body {
   font-family: 'Raleway', sans-serif;

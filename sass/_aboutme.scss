@@ -54,8 +54,8 @@
     text-align: center;
     font-size: 30px;
     color: white;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
   }
 }
 
@@ -69,12 +69,15 @@
   margin-top: 100px;
 }
 
+
 .box {
   border: 2px solid white;
   margin-right: 200px;
   margin-left: 200px;
   width: 80%;
   padding: 50px;
+  padding-right: 200px !important;
+  padding-left: 200px !important;
 }
 
 .title > div {
