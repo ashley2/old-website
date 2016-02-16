@@ -226,6 +226,41 @@ html {
 #modal-hide:focus {
   outline: none; }
 
+textarea {
+  text-align: margin-left;
+  height: 250px;
+  width: 250px; }
+
+::-webkit-input-placeholder {
+  text-align: center; }
+
+#sendButton {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #344a61;
+  background: transparent;
+  border: solid 5px #344a61;
+  transition: border .9s ease, color .5s ease; }
+
+#sendButton:hover {
+  border-color: #8dcbd0;
+  color: #8dcbd0; }
+
+#sendButton:active, #sendButton:focus {
+  border-color: #344a61;
+  color: #344a61;
+  outline: none; }
+
+#contactInfo {
+  display: table span;
+    display-display: table-cell;
+    display-vertical-align: middle;
+    display-width: 100vw;
+    display-text-align: center;
+    display-font-size: 30px; }
+
 #projects {
   background-color: #344a5f;
   display: flex; }

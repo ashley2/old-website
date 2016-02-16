@@ -25,7 +25,6 @@ function init() {
 
 //change note to a thank you
 var submitEmail = function(evt){
-  evt.preventDefault();
 
 
      var thankYouNote = $('#email-header'); //get the form field to replace text

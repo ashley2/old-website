@@ -253,26 +253,31 @@
   <div id="contactHead" align="center">
     <span>Contact Me!</span>
   </div>
-  <!-- <div id="contactInfo"> -->
-    <!--put info
-  </div> -->
+
+
+  <div id="contactInfo">
+    <span>
+      If you would like to hire me, have any projects for me, or have any other questions please feel free to contact me through email or leave me a message here! (Don't worry, the messages go straight to my inbox!)
+    </span>
+  </div>
   <div class="centerbuttons">
+
     <button id="modal-show">Send me a message!</button>
     <div id="modal-container">
       <section id="modal-box">
         <button id="modal-hide">x</button>
         <h2 id="email-header">Email me!</h2>
-        <form id="email-signup" action="#" method="post" accept-charset="utf-8">
+        <form action="https://getsimpleform.com/messages?form_api_token=9bb2b413121ba6348b16760ffee7009f" id="email-signup" method="post">
           <input type="name" name="name" value="" placeholder="Your name" required>
           <br>
           <br>
           <input type="email" name="email" value="" placeholder="Your email" required>
           <br>
           <br>
-          <input class="message" type="text" name"message" value="" placeholder="Your message">
+          <textarea class="message" type="text" name="message" value="" placeholder="Your message"></textarea>
           <br>
           <br>
-          <input type="submit" value="Send!">
+          <input id="sendButton" type="submit" value="Send!">
         </form>
       </section>
     </div>
