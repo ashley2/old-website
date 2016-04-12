@@ -40,20 +40,8 @@
   position: absolute;
   z-index: 1;
   height: 1080px;
-  width: 100%;
   background-color: rgba(0,0,0,0);
   text-align: center;
-  display: table;
-  span {
-    display: table-cell; 
-    vertical-align: middle;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    padding-right: 200px;
-    padding-left: 200px;
-  }
 }
 
 .title {
@@ -91,12 +79,10 @@
 
 .box {
   border: 2px solid white;
-  margin-right: 200px;
-  margin-left: 200px;
   width: 80%;
   padding: 50px;
-  padding-right: 200px !important;
-  padding-left: 200px !important;
+  font-size: 30px;
+  margin: 0 auto;
 }
 
 

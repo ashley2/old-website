@@ -1,5 +1,17 @@
+.table {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .table .vertical-cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+
 html {
-  background-color: white; }
+  background-color: white;
+  width: 100%;
+  overflow-x: hidden; }
 
 .row {
   margin: 0; }
@@ -9,6 +21,7 @@ html {
   min-height: 600px; }
 
 #header {
+  position: relative;
   height: 100vh;
   width: 100%; }
   #header .row {
@@ -37,15 +50,10 @@ html {
 
 .overlay {
   position: absolute;
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  display: table; }
-  .overlay span {
-    display: table-cell;
-    vertical-align: middle; }
-    .overlay span span {
-      background: rgba(0, 0, 0, 0.3); }
+  z-index: 1; }
+  .overlay > div > div {
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block; }
 
 .centerbuttons {
   text-align: center; }
@@ -86,19 +94,8 @@ html {
   position: absolute;
   z-index: 1;
   height: 1080px;
-  width: 100%;
   background-color: transparent;
-  text-align: center;
-  display: table; }
-  .mybio span {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    padding-right: 200px;
-    padding-left: 200px; }
+  text-align: center; }
 
 .title {
   font-size: 80px;
@@ -127,12 +124,10 @@ html {
 
 .box {
   border: 2px solid white;
-  margin-right: 200px;
-  margin-left: 200px;
   width: 80%;
   padding: 50px;
-  padding-right: 200px !important;
-  padding-left: 200px !important; }
+  font-size: 30px;
+  margin: 0 auto; }
 
 #contact {
   background-color: #cccccc; }
