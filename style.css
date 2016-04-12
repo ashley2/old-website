@@ -10,7 +10,7 @@ html {
 
 #header {
   height: 100vh;
-  width: 100vw; }
+  width: 100%; }
   #header .row {
     height: 100%;
     margin: 0; }
@@ -93,7 +93,7 @@ html {
   .mybio span {
     display: table-cell;
     vertical-align: middle;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     font-size: 30px;
     color: white;
@@ -103,10 +103,27 @@ html {
 .title {
   font-size: 80px;
   text-align: center;
-  position: absolute;
   display: block;
-  width: 100%;
-  margin-top: 100px; }
+  width: 100%; }
+  .title > div {
+    position: relative;
+    display: inline-block; }
+    .title > div:before, .title > div:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: white; }
+    .title > div:before {
+      right: 100%;
+      margin-right: 15px; }
+    .title > div:after {
+      left: 100%;
+      margin-left: 15px; }
+
+.absolute {
+  position: absolute; }
 
 .box {
   border: 2px solid white;
@@ -117,58 +134,8 @@ html {
   padding-right: 200px !important;
   padding-left: 200px !important; }
 
-.title > div {
-  position: relative;
-  display: inline-block; }
-
-.title > div:before,
-.title > div:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background: white; }
-
-.title > div:before {
-  right: 100%;
-  margin-right: 15px; }
-
-.title > div:after {
-  left: 100%;
-  margin-left: 15px; }
-
 #contact {
   background-color: #cccccc; }
-
-#contactHead > span {
-  font-size: 80px;
-  text-align: center;
-  position: absolute;
-  display: block;
-  margin-top: 100px;
-  white-space: nowrap; }
-
-#contactHead > span {
-  position: relative;
-  display: inline-block; }
-
-#contactHead > span:before,
-#contactHead > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background: white; }
-
-#contactHead > span:before {
-  right: 100%;
-  margin-right: 15px; }
-
-#contactHead > span:after {
-  left: 100%;
-  margin-left: 15px; }
 
 #modal-container {
   background-color: rgba(0, 0, 0, 0.5);
@@ -200,15 +167,13 @@ html {
   background: transparent;
   border: solid 5px white;
   transition: border .9s ease, color .5s ease; }
-
-#modal-show:hover {
-  border-color: #8dcbd0;
-  color: #8dcbd0; }
-
-#modal-show:active, #modal-show:focus {
-  border-color: #344a61;
-  color: #344a61;
-  outline: none; }
+  #modal-show:hover {
+    border-color: #8dcbd0;
+    color: #8dcbd0; }
+  #modal-show:active, #modal-show:focus {
+    border-color: #344a61;
+    color: #344a61;
+    outline: none; }
 
 #modal-hide {
   background: white;
@@ -222,9 +187,8 @@ html {
   position: relative;
   top: -18px;
   width: 30px; }
-
-#modal-hide:focus {
-  outline: none; }
+  #modal-hide:focus {
+    outline: none; }
 
 textarea {
   text-align: margin-left;
@@ -243,23 +207,13 @@ textarea {
   background: transparent;
   border: solid 5px #344a61;
   transition: border .9s ease, color .5s ease; }
-
-#sendButton:hover {
-  border-color: #8dcbd0;
-  color: #8dcbd0; }
-
-#sendButton:active, #sendButton:focus {
-  border-color: #344a61;
-  color: #344a61;
-  outline: none; }
-
-#contactInfo {
-  display: table span;
-    display-display: table-cell;
-    display-vertical-align: middle;
-    display-width: 100vw;
-    display-text-align: center;
-    display-font-size: 30px; }
+  #sendButton:hover {
+    border-color: #8dcbd0;
+    color: #8dcbd0; }
+  #sendButton:active, #sendButton:focus {
+    border-color: #344a61;
+    color: #344a61;
+    outline: none; }
 
 #projects {
   background-color: #344a5f;
@@ -270,8 +224,7 @@ textarea {
   text-align: center;
   position: absolute;
   width: 100%;
-  display: block;
-  margin-top: 100px; }
+  display: block; }
   .projectCells span {
     margin-bottom: 100px; }
 
@@ -288,7 +241,7 @@ textarea {
   .container-grid span {
     display: table-cell;
     vertical-align: middle;
-    width: 100vw;
+    width: 100%;
     text-align: center; }
 
 .row-centered {
@@ -375,61 +328,22 @@ h2.zero, p.zero {
   text-align: center;
   position: absolute;
   width: 100%;
-  color: #344a5f;
-  margin-top: 50px; }
-  .technologies span {
-    margin-bottom: 10px; }
-
-.technologies > span {
-  position: relative;
-  display: inline-block; }
-
-.technologies > span:before,
-.technologies > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background: #344a5f; }
-
-.technologies > span:before {
-  right: 100%;
-  margin-right: 15px; }
-
-.technologies > span:after {
-  left: 100%;
-  margin-left: 15px; }
+  color: #344a5f; }
+  .technologies .title > div:before, .technologies .title > div:after {
+    background-color: #344a5f; }
 
 img {
   margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 0px; }
+  margin-right: 15px; }
 
 #techbox {
   display: inline-block;
-  width: 100vw; }
+  width: 100%; }
 
 .tech-images {
   transition: all .5s ease; }
-
-.tech-images:hover {
-  transform: scale(1.5); }
-
-#html, #css, #sass {
-  width: 100px; }
-
-#javascript {
-  width: 250px; }
-
-#jquery {
-  width: 300px; }
-
-#gulp {
-  width: 90px; }
-
-#github {
-  width: 150px; }
+  .tech-images:hover {
+    transform: scale(1.5); }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -443,12 +357,6 @@ h1 {
 h3 {
   font-size: 20px; }
 
-/*blockquote {
-  font: 1.4em/1em 'Gloria Hallelujah', cursive;
-}
-
-blockquote:before { content: '"'; }
-blockquote:after { content: '"'; }*/
 .navbar {
   font-size: 20px;
   margin: 0;
@@ -468,13 +376,8 @@ blockquote:after { content: '"'; }*/
 .socialMedia {
   width: 26px;
   transition: all .5s ease; }
-
-.socialMedia:hover {
-  -webkit-filter: invert(0%);
-  -ms-filter: invert(0%);
-  -op-filter: invert(0%);
-  -moz-filter: invert(0%);
-  filter: invert(0%); }
+  .socialMedia:hover {
+    filter: invert(0%); }
 
 footer {
   background-color: gray;

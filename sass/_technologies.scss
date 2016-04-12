@@ -8,73 +8,76 @@
   text-align: center;
   position: absolute;
   width: 100%; 
-  color: #344a5f;
-  margin-top: 50px;
-  span {
-    margin-bottom: 10px;
+  color: $secondary;
+  //margin-top: 50px;
+  .title {
+    > div:before, > div:after {
+    background-color: $secondary;
+    }
   }
 }
 
-.technologies > span {
-  position: relative;
-  display: inline-block;
-}
 
-.technologies > span:before,
-.technologies > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 40%;
-  height: 1px;
-  background: #344a5f;
-}
+// // .technologies > span {
+// //   position: relative;
+// //   display: inline-block;
+// // }
 
-.technologies > span:before {
-  right: 100%;
-  margin-right: 15px;
-}
+// .technologies > span:before,
+// .technologies > span:after {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   width: 40%;
+//   height: 1px;
+//   background: $secondary;
+// }
 
-.technologies > span:after {
-  left: 100%;
-  margin-left: 15px;
-}
+// // .technologies > span:before {
+// //   right: 100%;
+// //   margin-right: 15px;
+// // }
+
+// // .technologies > span:after {
+// //   left: 100%;
+// //   margin-left: 15px;
+// // }
 
 img {
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 0px;
+  //margin-top: 0px;
 }
 
 #techbox {
   display: inline-block;
   // height: 90%;
-  width: 100vw;
+  width: 100%;
 }
 
 .tech-images{
   transition: all .5s ease;
-}
-.tech-images:hover {
-  transform: scale(1.5);
-}
-
-#html, #css, #sass{
-  width: 100px;
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
-#javascript {
-  width: 250px;
-}
+// #html, #css, #sass{
+//   width: 100px;
+// }
 
-#jquery {
-  width: 300px;
-}
+// #javascript {
+//   width: 250px;
+// }
 
-#gulp {
-  width: 90px;
-}
+// #jquery {
+//   width: 300px;
+// }
 
-#github {
-  width: 150px;
-}
+// #gulp {
+//   width: 90px;
+// }
+
+// #github {
+//   width: 150px;
+// }

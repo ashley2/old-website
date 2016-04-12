@@ -1,11 +1,13 @@
 // @import "component";
 
+$primary: #8dcbd0;
+$secondary: #344a5f;
+$accent: #cccccc;
+
 
 html {
   background-color: white;
 }
-
-
 
 .row {
   margin: 0;
@@ -14,18 +16,15 @@ html {
 .page {
   height: 100vh;
   min-height: 600px;
-
 }
 
 @import "_home", "_aboutme", "_contacts", "_project", "_technologies";
-
-
 
 body {
 
   font-family: 'Raleway', sans-serif;
   color: white;
-  // margin-top: 58px;
+  // //margin-top: 58px;
   padding: 0px;
   position: relative;
 }
@@ -38,16 +37,6 @@ h1 {
 h3{
   font-size: 20px;
 }
-
-
-
-
-/*blockquote {
-  font: 1.4em/1em 'Gloria Hallelujah', cursive;
-}
-
-blockquote:before { content: '"'; }
-blockquote:after { content: '"'; }*/
 
 
 .navbar {
@@ -71,22 +60,13 @@ blockquote:after { content: '"'; }*/
   }
 }
 
-
-
 .socialMedia{
   width: 26px;
   transition: all .5s ease;
+  &:hover{
+    filter: invert(0%);
+  }
 }
-.socialMedia:hover{
-  -webkit-filter: invert(0%);
-  -ms-filter: invert(0%);
-  -op-filter: invert(0%);
-  -moz-filter: invert(0%);
-  filter: invert(0%);
-
-
-}
-
 
 
 footer {
