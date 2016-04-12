@@ -6,11 +6,9 @@
 
 .technologies {
   height: auto;
-  font-size: 80px;
   text-align: center;
   width: 100%; 
   color: $secondary;
-  //margin-top: 50px;
   .title {
     > div:before, > div:after {
     background-color: $secondary;

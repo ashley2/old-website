@@ -44,34 +44,6 @@
   text-align: center;
 }
 
-.title {
-  font-size: 80px;
-  text-align: center;
-  display: block;
-  width: 100%;
-  //margin-top: 100px;
-  > div {
-    position: relative;
-    display: inline-block;
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 40%;
-      height: 1px;
-      background: white;
-    }
-    &:before {
-      right: 100%;
-      margin-right: 15px;
-    }
-    &:after {
-      left: 100%;
-      margin-left: 15px;
-    }
-  }
-}
 
 .absolute {
   position: absolute;

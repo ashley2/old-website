@@ -1,0 +1,33 @@
+@media(max-width: 500px) {
+  h1 {
+    font-size: 41px;
+  }
+  .title {
+    font-size: 40px;
+  }
+
+  .box {
+    font-size: 20px;
+  }
+  #aboutme {
+    height: 667px;
+  }
+  .tech-images {
+    height: 70px;
+    margin: 15px;
+
+  }
+  #techbox {
+    margin-top: 15%;
+  }
+  #modal-box {
+    width: 300px;
+  }
+  textarea {
+    height: 250px;
+    width: 250px;
+  }
+  #modal-container {
+  left: -20px;
+  }
+}

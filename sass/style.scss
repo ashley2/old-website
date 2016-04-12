@@ -30,7 +30,33 @@ html {
   min-height: 600px;
 }
 
-@import "_home", "_aboutme", "_contacts", "_project", "_technologies";
+.title {
+  font-size: 80px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  > div {
+    position: relative;
+    display: inline-block;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: white;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+  }
+}
 
 body {
 
@@ -93,3 +119,7 @@ footer {
  font-size: 15px;
  text-align: center;
 }
+
+@import "_home", "_aboutme", "_contacts", "_project", "_technologies";
+@import "_media";
+
