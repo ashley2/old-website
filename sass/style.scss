@@ -36,7 +36,6 @@ body {
 
   font-family: 'Raleway', sans-serif;
   color: white;
-  // //margin-top: 58px;
   padding: 0px;
   position: relative;
 }
@@ -73,11 +72,18 @@ h3{
   }
 }
 
-.socialMedia{
+.socialMedia, {
   width: 26px;
   transition: all .5s ease;
   &:hover{
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+  }
+}
+
+.navlinks {
+  transition: all .5s ease;
+  &:hover{
+    -webkit-filter: invert(0%);
   }
 }
 
