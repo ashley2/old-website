@@ -8,11 +8,13 @@ function init() {
   var modalContainer = $('#modal-container'); 
 
   var hideModal = function() {  
-    modalContainer.hide();
+    modalContainer.removeClass('show')
+    // modalContainer.hide();
   };
 
   var showModal = function() { 
-    modalContainer.show();
+    modalContainer.addClass('show')
+    // modalContainer.show();
   };
 
   var showModalButton = $('#modal-show');

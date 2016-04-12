@@ -1,15 +1,24 @@
 
 
 #modal-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  background-color: rgba(0, 0, 0, 0);
   height: 100%;
   left: 0px;
   position: fixed;
   top: 0px;
   width: 100%;
   color: #344a61;
+  z-index: -1050;
+  transition: background-color 1s ease;
+  &.show {
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 1050;
+   #modal-box {
+    transform: translateY(-50%)  scale(1)
+   }
+ }
 }
+
 
 #modal-box {
   background-color: rgb(255, 255, 255);
@@ -19,9 +28,12 @@
   padding-bottom: 10px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) scale(0);
   width: 480px;
+  transition: all 1s ease;
 }
+
+
  // SEND MESSAGE BUTTON
  #modal-show{
   display: inline-block;
