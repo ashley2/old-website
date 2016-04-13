@@ -60,10 +60,12 @@ h3 {
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 0%;
-  border: 0;
-  color: white; }
+  border: 0; }
   .navbar a {
-    color: white !important; }
+    color: white !important;
+    transition: color 1s ease; }
+    .navbar a:hover {
+      color: gray !important; }
   .navbar img {
     -webkit-filter: invert(100%); }
   .navbar li.active > a {
@@ -74,11 +76,6 @@ h3 {
   width: 26px;
   transition: all .5s ease; }
   .socialMedia:hover {
-    -webkit-filter: invert(0%); }
-
-.navlinks {
-  transition: all .5s ease; }
-  .navlinks:hover {
     -webkit-filter: invert(0%); }
 
 footer {
@@ -354,7 +351,7 @@ img {
   .tech-images:hover {
     transform: scale(1.5); }
 
-@media (max-width: 500px) {
+@media (max-width: 667px) {
   h1 {
     font-size: 41px; }
   .title {
@@ -369,9 +366,8 @@ img {
   #techbox {
     margin-top: 15%; }
   #modal-box {
-    width: 300px; }
+    width: 300px;
+    height: 200px; }
   textarea {
-    height: 250px;
-    width: 250px; }
-  #modal-container {
-    left: -20px; } }
+    height: 220px;
+    width: 220px; } }

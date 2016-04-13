@@ -84,9 +84,13 @@ h3{
   background-color: rgba(255,255,255,.0);
   border-radius: 0%;
   border: 0;
-  color: white;
+  // color: white;
   a {
     color: white !important;
+    transition: color 1s ease;
+    &:hover{
+      color: gray !important;
+    }
   }
   img {
     -webkit-filter: invert(100%);
@@ -94,7 +98,6 @@ h3{
   li.active > a {
     background-color: transparent !important;
     color: black !important; 
-
   }
 }
 
@@ -106,13 +109,14 @@ h3{
   }
 }
 
-.navlinks {
-  transition: all .5s ease;
-  &:hover{
-    -webkit-filter: invert(0%);
-  }
-}
-
+// .navlinks {
+//   color: 
+//   transition: all .5s ease;
+//   &:hover{
+//     color: yellow;
+//     // -webkit-filter: invert(0%);
+//   }
+// }
 
 footer {
  background-color: gray;

@@ -1,4 +1,4 @@
-@media(max-width: 500px) {
+@media(max-width: 667px) {
   h1 {
     font-size: 41px;
   }
@@ -22,12 +22,11 @@
   }
   #modal-box {
     width: 300px;
+    height: 200px;
   }
   textarea {
-    height: 250px;
-    width: 250px;
-  }
-  #modal-container {
-  // left: -20px
+    height: 220px;
+    width: 220px;
   }
 }
+
