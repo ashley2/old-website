@@ -73,10 +73,11 @@ h3 {
     color: black !important; }
 
 .socialMedia {
-  width: 26px;
-  transition: all .5s ease; }
+  width: 50px;
+  transition: all .5s ease;
+  -webkit-filter: invert(100%); }
   .socialMedia:hover {
-    -webkit-filter: invert(0%); }
+    -webkit-filter: hue-rotate(10deg); }
 
 footer {
   background-color: gray;
