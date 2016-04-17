@@ -4,7 +4,7 @@
 $(document).ready(init);
 function init() {
 
-
+  $('body').addClass('revealed')
   var modalContainer = $('#modal-container'); 
 
   var hideModal = function() {  
