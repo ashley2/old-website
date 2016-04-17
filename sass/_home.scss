@@ -37,16 +37,18 @@
 
 .overlay {
   position: absolute;
+  height: 100vh;
+  width: 100vw;
   z-index: 1;
   > div > div {
     background: rgba(0,0,0, .3);
     display: inline-block;
-     &:not(.revealed){
-      opacity: 0;
-      height: 100vh;
+    // &:not(.revealed){
+    //   opacity: 0;
+    //   height: 100vh;
 
-      overflow: hidden;
-  }
+    //   overflow: hidden;
+    // }
   }
 }
 
