@@ -32,3 +32,14 @@ img {
     transform: scale(1.5);
   }
 }
+
+svg#bigTriangleColor {
+  pointer-events: none;
+}
+
+#bigTriangleColor path {
+  fill: white;
+  stroke: white;
+  stroke-width: 2;
+}
+
